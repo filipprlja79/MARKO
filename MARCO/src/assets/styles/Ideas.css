@@ -1,0 +1,236 @@
+.ideas {
+  background: #0b0b0b;
+  color: #ffffffd0;
+  padding: 110px 24px;
+  overflow: hidden;
+}
+
+.ideas__intro {
+  max-width: 850px;
+  margin: 0 auto 80px;
+   /* font-family: "Cormorant Garamond", serif;
+   font-weight: 600; */
+  text-align: center;
+}
+
+.ideas__eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #c8a46b;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.ideas__intro h2 {
+  font-size: clamp(40px, 6vw, 88px);
+  font-family: "Cormorant Garamond", serif;
+  line-height: 0.95;
+  margin: 0 0 24px;
+}
+
+.ideas__intro p {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.ideas__category {
+  max-width: 1400px;
+  margin: 0 auto 90px;
+}
+
+.ideas__category-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.ideas__category-head span {
+  color: #c8a46b;
+  font-size: 14px;
+}
+
+.ideas__category-head h3 {
+  font-size: clamp(30px, 4vw, 56px);
+  font-family: "Cormorant Garamond", serif;
+  margin: 8px 0 0;
+}
+
+.ideas__category-head p {
+  max-width: 420px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+}
+
+.marco{
+  color: red;
+}
+.ideas__slider {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 18px;
+  scroll-snap-type: x mandatory;
+  max-width: 100%;
+}
+
+.ideas__slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.ideas__slider::-webkit-scrollbar-thumb {
+  background: #c8a46b;
+  border-radius: 20px;
+}
+
+.ideas__card {
+  position: relative;
+  min-width: 330px;
+  height: 440px;
+  border-radius: 28px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  background: #161616;
+  cursor: pointer;
+}
+
+.ideas__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.ideas__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.88),
+    rgba(0, 0, 0, 0.25),
+    transparent
+  );
+}
+
+.ideas__card-overlay {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  transform: translateY(18px);
+  transition: transform 0.5s ease;
+}
+
+.ideas__card-overlay span {
+  color: #c8a46b;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.ideas__card-overlay h4 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.ideas__card-overlay p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.ideas__card:hover img {
+  transform: scale(1.08);
+}
+
+.ideas__card:hover .ideas__card-overlay {
+  transform: translateY(0);
+}
+
+.ideas__card:hover .ideas__card-overlay p {
+  opacity: 1;
+}
+
+.ideas__cta {
+  max-width: 900px;
+  margin: 80px auto 0;
+  margin-bottom: 50px;
+  padding: 70px 34px;
+  border: 1px solid rgba(200, 164, 107, 0.35);
+  border-radius: 34px;
+  text-align: center;
+  background:
+    radial-gradient(circle at top, rgba(200, 164, 107, 0.18), transparent 45%),
+    #111;
+}
+
+.ideas__cta h3 {
+  font-size: clamp(32px, 5vw, 64px);
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1;
+  margin: 0 0 22px;
+}
+
+.ideas__cta p {
+  max-width: 620px;
+  margin: 0 auto 32px;
+  color: white;
+  line-height: 1.7;
+}
+
+.ideas__cta p {
+  max-width: 620px;
+  margin: 0 auto 32px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.7;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+  
+
+
+.ideas__cta a:hover {
+  transform: translateY(-3px);
+  background: #e1bd7b;
+}
+
+@media (max-width: 768px) {
+  .ideas {
+    padding: 80px 16px;
+  }
+
+  .ideas__intro {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  .ideas__category-head {
+    display: block;
+  }
+
+  .ideas__category-head p {
+    margin-top: 14px;
+  }
+
+  .ideas__card {
+    min-width: 82vw;
+    height: 420px;
+    border-radius: 22px;
+  }
+
+  .ideas__card-overlay p {
+    opacity: 1;
+  }
+
+  .ideas__cta {
+    padding: 48px 22px;
+  }
+}

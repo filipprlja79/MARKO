@@ -1,0 +1,245 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  background: #0b0b0b;
+  color: white;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/susara4.png");
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  background-size: cover;
+  z-index: 0;
+}
+/* mobile slika */
+@media (max-width: 768px) {
+  .hero__dark {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.35) 28%,
+        rgba(0, 0, 0, 0.88) 52%,
+        rgba(0, 0, 0, 0.55) 100%
+      );
+    z-index: 2;
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 4;
+  }
+
+  .hero h1,
+  .hero p,
+  .hero__eyebrow {
+    text-shadow: 0 3px 18px rgba(0, 0, 0, 0.85);
+  }
+}
+.hero__smoke {
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.14), transparent 25%),
+    radial-gradient(circle at 70% 50%, rgba(255, 255, 255, 0.08), transparent 30%);
+  filter: blur(35px);
+  opacity: 0.45;
+  animation: smokeMove 9s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+.hero__dark {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, rgba(139, 31, 31, 0.25), transparent 45%),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.8) 75%,
+      #0b0b0b 100%
+    );
+  z-index: 2;
+}
+
+.hero__dark::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 260px;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 11, 11, 0) 0%,
+    rgba(11, 11, 11, 0.8) 55%,
+    #0b0b0b 100%
+  );
+}
+
+.hero__content {
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  z-index: 5;
+  width: 560px;
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 600;
+  max-width: calc(100% - 160px);
+  transform: translateY(-50%);
+}
+
+.hero__eyebrow {
+  color: #c99f61;
+  font-size: 11px;
+  margin-top: 70px !important;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 20 16px 65px;
+}
+
+.hero__logo {
+  width: 505px;
+  max-width: 100%;
+  display: block;
+  margin: 0 0 28px 0;
+  filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.8));
+}
+
+.hero__title {
+  font-size: 72px;
+  line-height: 1.05;
+  margin: 0 0 18px 65px;
+  color: white;
+  white-space: pre-line;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  min-height: 230px;
+}
+
+.hero__text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #c99f61;
+  max-width: 470px;
+  margin: 0 0 0 65px;
+  white-space: pre-line;
+
+  min-height: 90px;
+}
+
+@keyframes smokeMove {
+  from {
+    transform: translateX(-30px) translateY(20px) scale(1);
+  }
+
+  to {
+    transform: translateX(35px) translateY(-20px) scale(1.15);
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .hero__content {
+    left: 60px;
+    width: 480px;
+    max-width: calc(100% - 120px);
+  }
+
+  .hero__logo {
+    width: 380px;
+  }
+
+  .hero__title {
+    font-size: 58px;
+     font-family: "Cormorant Garamond", serif;
+     font-weight: 600;
+    min-height: 180px;
+  }
+
+  .hero__text {
+    font-size: 17px;
+    max-width: 430px;
+    min-height: 90px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .hero__bg {
+    background-position: center center;
+  }
+
+  .hero__content {
+    left: 24px;
+    top: 47%;
+    width: calc(100% - 48px);
+    max-width: calc(100% - 48px);
+    transform: translateY(-50%);
+  }
+
+  .hero__eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 0px !important;
+    margin: 0 0 14px 0;
+    
+  }
+
+  .hero__logo {
+    width: 230px;
+    margin-bottom: 18px;
+  }
+
+  .hero__title {
+    font-size: 42px;
+    line-height: 1.05;
+    margin: 0 0 16px 0;
+     font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    min-height: 140px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+    max-width: 330px;
+    margin: 0;
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__content {
+    left: 20px;
+    top: 44%;
+    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+  }
+
+  .hero__logo {
+    width: 185px;
+  }
+
+  .hero__title {
+    font-size: 34px;
+    min-height: 115px;
+     font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    max-width: 300px;
+    min-height: 90px;
+  }
+}
