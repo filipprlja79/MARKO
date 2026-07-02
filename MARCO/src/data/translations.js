@@ -672,21 +672,21 @@ ideas: {
           product: "Smoked Neck",
           text:
             "An ideal sandwich for a quick but high-quality meal.",
-          image: "/src/assets/images-food/ciabata.jpg",
+          image: "/images-food/ciabata.jpg",
         },
         {
           title: "Burrata with Smoked Neck",
           product: "Smoked Neck",
           text:
             "Creamy burrata and carefully aged smoked neck in perfect flavor harmony.",
-          image: "/src/assets/images-food/buratasa-suvim-vratom.jpg",
+          image: "/images-food/buratasa-suvim-vratom.jpg",
         },
         {
           title: "Wine Platter",
           product: "Smoked Neck",
           text:
             "Smoked neck, prosciutto and hard cheeses — a combination made for enjoyment.",
-          image: "/src/assets/images-food/plata-za-vino.jpg",
+          image: "/images-food/plata-za-vino.jpg",
         },
       ],
     },
