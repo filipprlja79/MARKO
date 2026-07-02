@@ -248,33 +248,34 @@ ideas: {
         },
       ],
     },
+    
+   {
+  label: "03",
+  title: "Suvi vrat",
+  description: "Mekan, aromatičan i odličan za lagane premium obroke.",
+  items: [
     {
-      label: "03",
-      title: "Suvi vrat",
-      description: "Mekan, aromatičan i odličan za lagane premium obroke.",
-      items: [
-        {
-          title: "Ciabatta sa suvim vratom",
-          product: "Suvi vrat",
-          text: "Idealan sendvič za brz, ali kvalitetan obrok.",
-          image: "/src/assets/images-food/ciabata.jpg",
-        },
-        {
-          title: "Burata sa suvim vratom",
-          product: "Suvi vrat",
-          text:
-            "Kremasta burrata i pažljivo odležani suvi vrat u savršenoj harmoniji ukusa.",
-          image: "/src/assets/images-food/buratasa-suvim-vratom.jpg",
-        },
-        {
-          title: "Plata za vino",
-          product: "Suvi vrat",
-          text:
-            "Suvi vrat, pršut i tvrdi sirevi — kombinacija za uživanje.",
-          image: "/src/assets/images-food/plata-za-vino.jpg",
-        },
-      ],
+      title: "Ciabatta sa suvim vratom",
+      product: "Suvi vrat",
+      text: "Idealan sendvič za brz, ali kvalitetan obrok.",
+      image: "/images-food/ciabata.jpg",
     },
+    {
+      title: "Burata sa suvim vratom",
+      product: "Suvi vrat",
+      text:
+        "Kremasta burrata i pažljivo odležani suvi vrat u savršenoj harmoniji ukusa.",
+      image: "/images-food/buratasa-suvim-vratom.jpg",
+    },
+    {
+      title: "Plata za vino",
+      product: "Suvi vrat",
+      text:
+        "Suvi vrat, pršut i tvrdi sirevi — kombinacija za uživanje.",
+      image: "/images-food/plata-za-vino.jpg",
+    },
+  ],
+},
     {
       label: "04",
       title: "Pečenica",
@@ -593,7 +594,7 @@ ideas: {
           product: "Prosciutto",
           text:
             "Cheese, olives, homemade bread and prosciutto — a classic that always impresses.",
-          image: "/src/assets/images-food/njeguska-plata.webp",
+          image: "/images-food/njeguska-plata.webp"
         },
         {
           title: "Prosciutto Pizza",

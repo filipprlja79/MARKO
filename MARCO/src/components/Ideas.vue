@@ -57,7 +57,6 @@
 import { computed } from "vue";
 
 import "../assets/styles/Ideas.css";
-
 import { currentLanguage } from "../data/languageStore";
 import { translations } from "../data/translations";
 
