@@ -83,3 +83,22 @@
     font-size: 38px;
   }
 }
+
+.contact__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact__response {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.contact__response--success {
+  color: #2e7d32;
+}
+
+.contact__response--error {
+  color: #b71c1c;
+}

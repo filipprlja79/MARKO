@@ -56,9 +56,9 @@
                         {{ t.delivery }}
                     </p>
 
-                    <a href="mailto:info@marco.me">
+                    <a href="mailto:info@meatgroup.me?subject=Upit sa MARCO Website&body=Poštovani," class="email-link">
                         <Mail :size="17" />
-                        info@marco.me
+                        info@meatgroup.me
                     </a>
 
                     <a href="tel:+38269339289">

@@ -361,7 +361,10 @@ contact: {
 
   messagePlaceholder: "Vaša poruka",
 
-  button: "Pošalji",
+  button: {
+  send: "Pošalji poruku",
+  sent: "Poruka poslata"
+}
 },
 
 footer: {
@@ -775,7 +778,10 @@ contact: {
 
   messagePlaceholder: "Your Message",
 
-  button: "Send",
+  button: {
+  send: "Send Message",
+  sent: "Message Sent"
+}
 },
 footer: {
   eyebrow: "MARCO Delicatess Selection",

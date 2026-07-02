@@ -34,10 +34,6 @@ const awards = [
     alt: "Diploma Meat Group"
   },
   {
-    image: diploma1,
-    alt: "Diploma Vesna Jovanović"
-  },
-  {
     image: diploma2,
     alt: "Diploma Meat Group"
   },
