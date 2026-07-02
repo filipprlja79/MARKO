@@ -48,7 +48,7 @@ function envValue(string $key, $default = null) {
 }
 
 $config = [
-    'allowed_origin' => envValue('ALLOWED_ORIGIN', 'http://localhost:5173'),
+    'allowed_origin' => envValue('ALLOWED_ORIGIN', 'https://meatgroup.me'),
 
     'smtp_host' => envValue('SMTP_HOST'),
     'smtp_port' => (int) envValue('SMTP_PORT', 587),

@@ -22,59 +22,26 @@
 
       <form class="contact__form" @submit.prevent="sendMessage">
         <label class="sr-only" for="contact-name">{{ t.namePlaceholder }}</label>
-        <input
-          id="contact-name"
-          v-model="form.name"
-          name="name"
-          type="text"
-          autocomplete="name"
-          :placeholder="t.namePlaceholder"
-          class="contact__input"
-        >
+        <input id="contact-name" v-model="form.name" name="name" type="text" autocomplete="name"
+          :placeholder="t.namePlaceholder" class="contact__input">
 
         <label class="sr-only" for="contact-email">{{ t.emailPlaceholder }}</label>
-        <input
-          id="contact-email"
-          v-model="form.email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          :placeholder="t.emailPlaceholder"
-          class="contact__input"
-        >
+        <input id="contact-email" v-model="form.email" name="email" type="email" autocomplete="email"
+          :placeholder="t.emailPlaceholder" class="contact__input">
 
         <label class="sr-only" for="contact-phone">{{ t.phonePlaceholder }}</label>
-        <input
-          id="contact-phone"
-          v-model="form.phone"
-          name="phone"
-          type="tel"
-          autocomplete="tel"
-          :placeholder="t.phonePlaceholder"
-          class="contact__input"
-        >
+        <input id="contact-phone" v-model="form.phone" name="phone" type="tel" autocomplete="tel"
+          :placeholder="t.phonePlaceholder" class="contact__input">
 
         <label class="sr-only" for="contact-message">{{ t.messagePlaceholder }}</label>
-        <textarea
-          id="contact-message"
-          v-model="form.message"
-          name="message"
-          rows="6"
-          :placeholder="t.messagePlaceholder"
-          class="contact__textarea"
-        ></textarea>
+        <textarea id="contact-message" v-model="form.message" name="message" rows="6"
+          :placeholder="t.messagePlaceholder" class="contact__textarea"></textarea>
 
-        <ContactButton
-          :loading="loading"
-          :success="success"
-        />
+        <ContactButton :loading="loading" :success="success" />
 
-       <p
-  v-if="!success && responseMessage"
-  class="contact__response contact__response--error"
->
-  {{ responseMessage }}
-</p>
+        <p v-if="!success && responseMessage" class="contact__response contact__response--error">
+          {{ responseMessage }}
+        </p>
       </form>
     </div>
   </section>
@@ -118,7 +85,7 @@ const sendMessage = async () => {
   loading.value = true;
 
   try {
-    const response = await fetch("http://localhost:8000/contact.php", {
+    const response = await fetch("/backend/contact.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

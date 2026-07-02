@@ -456,21 +456,21 @@ footer: {
         },
 
         suviVrat: {
-          name: "Njeguši Cured Neck",
+          name: "Njeguši Smoked  Neck",
           tag: "Selection",
           description:
             "A carefully aged specialty with intense flavor and tender texture for true lovers of premium delicacies.",
         },
 
         suvaPecenica: {
-          name: "Cured Pork Loin",
+          name: "Smoked  Pork Loin",
           tag: "Traditional Specialty",
           description:
             "A mild and refined meat flavor that pairs perfectly with cheeses, wines and homemade specialties.",
         },
 
         njeguskaPecenica: {
-          name: "Njeguši Cured Pork Loin",
+          name: "Njeguši Smoked  Pork Loin",
           tag: "Selection",
           description:
             "Traditional recipes and careful smoking create a product you will always come back to.",
@@ -654,7 +654,7 @@ ideas: {
           title: "Potatoes with Pancetta",
           product: "Pancetta",
           text:
-            "A simple dish that becomes special with good cured meat.",
+            "A simple dish that becomes special with good smoked  meat.",
           image:
             "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=900&q=80",
         },
@@ -662,44 +662,44 @@ ideas: {
     },
     {
       label: "03",
-      title: "Cured Neck",
+      title: "Smoked Neck",
       description:
         "Tender, aromatic and excellent for light premium meals.",
       items: [
         {
-          title: "Ciabatta with Cured Neck",
-          product: "Cured Neck",
+          title: "Ciabatta with Smoked Neck",
+          product: "Smoked Neck",
           text:
             "An ideal sandwich for a quick but high-quality meal.",
           image: "/src/assets/images-food/ciabata.jpg",
         },
         {
-          title: "Burrata with Cured Neck",
-          product: "Cured Neck",
+          title: "Burrata with Smoked Neck",
+          product: "Smoked Neck",
           text:
-            "Creamy burrata and carefully aged cured neck in perfect flavor harmony.",
+            "Creamy burrata and carefully aged smoked neck in perfect flavor harmony.",
           image: "/src/assets/images-food/buratasa-suvim-vratom.jpg",
         },
         {
           title: "Wine Platter",
-          product: "Cured Neck",
+          product: "Smoked Neck",
           text:
-            "Cured neck, prosciutto and hard cheeses — a combination made for enjoyment.",
+            "Smoked neck, prosciutto and hard cheeses — a combination made for enjoyment.",
           image: "/src/assets/images-food/plata-za-vino.jpg",
         },
       ],
     },
     {
       label: "04",
-      title: "Cured Pork Loin",
+      title: "Smoked Pork Loin",
       description:
         "Clean, tender and recognizable meat flavor.",
       items: [
         {
           title: "Premium Panini",
-          product: "Pork Loin",
+          product: "Smoked Pork Loin",
           text:
-            "A warm sandwich with cheese, cured pork loin and a crispy crust.",
+            "A warm sandwich with cheese, smoked pork loin and a crispy crust.",
           image:
             "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=900&q=80",
         },
@@ -766,7 +766,7 @@ contact: {
     "Do you have questions or would you like to work with us?",
 
   description:
-    "For years, MARCO has been bringing authentic Montenegrin cured meat specialties to tables across the country. If you are interested in cooperation, distribution, or would like more information about our products, our team is at your disposal. Send us a message and become part of the MARCO story.",
+    "For years, MARCO has been bringing authentic Montenegrin smoked meat specialties to tables across the country. If you are interested in cooperation, distribution, or would like more information about our products, our team is at your disposal. Send us a message and become part of the MARCO story.",
 
   emailLabel: "Email: ",
 
