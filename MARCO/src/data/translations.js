@@ -186,7 +186,7 @@ ideas: {
           product: "Pršut",
           text:
             "Sir, masline, domaći hljeb i pršut — klasik koji uvijek prodaje.",
-          image: "/src/assets/images-food/njeguska-plata.webp",
+          image: "/images-food/njeguska-plata.webp"
         },
         {
           title: "Pizza sa pršutom",
