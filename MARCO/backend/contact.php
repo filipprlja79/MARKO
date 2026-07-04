@@ -1,6 +1,14 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+file_put_contents(__DIR__ . '/debug.txt', "contact.php reached\n", FILE_APPEND);
+
 require __DIR__ . '/config/bootstrap.php';
+
+file_put_contents(__DIR__ . '/debug.txt', "bootstrap loaded\n", FILE_APPEND);
 
 header("Access-Control-Allow-Origin: " . $config['allowed_origin']);
 header("Access-Control-Allow-Headers: Content-Type");
@@ -50,6 +58,5 @@ try {
     jsonResponse(true, 'Poruka je uspješno poslata.');
 } catch (Throwable $e) {
     Logger::error('Contact form error: ' . $e->getMessage());
-
-    jsonResponse(false, 'Greška pri slanju poruke. Pokušajte ponovo kasnije.', 500);
+    jsonResponse(false, $e->getMessage(), 500);
 }
