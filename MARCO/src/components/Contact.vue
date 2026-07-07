@@ -84,8 +84,12 @@ const sendMessage = async () => {
 
   loading.value = true;
 
+  const apiUrl = window.location.hostname === "localhost"
+    ? "http://localhost/MARCO_SEO_optimized/MARCO/backend/contact.php"
+    : "/contact.php";
+
   try {
-    const response = await fetch("/backend/contact.php", {
+    const response = await fetch(apiUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

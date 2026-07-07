@@ -1,13 +1,24 @@
 <?php
 
 require __DIR__ . '/config/bootstrap.php';
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
-header("Access-Control-Allow-Origin: " . $config['allowed_origin']);
-header("Access-Control-Allow-Headers: Content-Type");
-header("Access-Control-Allow-Methods: POST, OPTIONS");
-header("Content-Type: application/json; charset=UTF-8");
+$requestOrigin = $_SERVER['HTTP_ORIGIN'] ?? '';
+$allowedOrigin = $config['allowed_origin'];
+
+if ($requestOrigin !== '' && in_array($requestOrigin, $config['allowed_origins'], true)) {
+    $allowedOrigin = $requestOrigin;
+}
+
+header('Access-Control-Allow-Origin: ' . $allowedOrigin);
+header('Access-Control-Allow-Headers: Content-Type, X-Requested-With');
+header('Access-Control-Allow-Methods: POST, OPTIONS');
+header('Vary: Origin');
+header('Content-Type: application/json; charset=UTF-8');
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204);
     exit;
 }
 

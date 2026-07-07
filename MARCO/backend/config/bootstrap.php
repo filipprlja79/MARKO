@@ -51,6 +51,18 @@ function envValue(string $key, $default = null)
 
 $config = [
     'allowed_origin' => envValue('ALLOWED_ORIGIN', 'https://meatgroup.me'),
+    'allowed_origins' => array_values(array_unique(array_filter([
+        envValue('ALLOWED_ORIGIN', 'https://meatgroup.me'),
+        envValue('ALLOWED_ORIGIN_LOCAL', 'http://localhost:5173'),
+        'http://127.0.0.1:5173',
+        'http://localhost',
+        'http://127.0.0.1',
+    ], static function ($origin) {
+        return $origin !== null && $origin !== '';
+    }))),
+
+    'base_url' => envValue('BASE_URL', 'https://meatgroup.me'),
+    'mail_logo_url' => envValue('MAIL_LOGO_URL', rtrim(envValue('BASE_URL', 'https://meatgroup.me'), '/') . '/logo-mail.png'),
 
     'smtp_host' => envValue('SMTP_HOST'),
     'smtp_port' => (int) envValue('SMTP_PORT', 587),
