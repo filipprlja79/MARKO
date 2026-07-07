@@ -44,7 +44,7 @@
     :key="partner.name"
   >
     <article class="partners__item">
-      <img :src="partner.logo" :alt="`${partner.name} partner MARCO proizvoda`" loading="lazy" decoding="async" />
+      <img :src="partner.logo" loading="lazy" decoding="async" :alt="`${partner.name} partner MARCO proizvoda`" />
       <h3>{{ partner.name }}</h3>
       <p>{{ partner.description }}</p>
     </article>

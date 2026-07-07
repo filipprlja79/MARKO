@@ -33,6 +33,8 @@
           <img
             :src="activeLanguage.flag"
             :alt="activeLanguage.label"
+            :loading="lazy" 
+            :decoding="async"
           />
         </button>
 
@@ -42,12 +44,12 @@
             class="language-switcher__dropdown"
           >
             <button type="button" aria-label="Crnogorski jezik" @click="changeLanguage('cg')">
-              <img :src="languages.cg.flag" alt="Crnogorski" />
+              <img :src="languages.cg.flag" :loading="lazy" :decoding="async" :alt="languages.cg.label" />
               <span>CG</span>
             </button>
 
             <button type="button" aria-label="English language" @click="changeLanguage('en')">
-              <img :src="languages.en.flag" alt="English" />
+              <img :src="languages.en.flag" :loading="lazy" :decoding="async" :alt="languages.en.label" />
               <span>ENG</span>
             </button>
           </div>

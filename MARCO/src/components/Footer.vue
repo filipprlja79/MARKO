@@ -4,7 +4,7 @@
             <div class="footer__brand">
                 <span class="footer__eyebrow">{{ t.eyebrow }}</span>
 
-                <img :src="logo" alt="MARCO Delicatess Selection logo" class="footer__logo" loading="lazy" decoding="async" @click="scrollToTop" />
+                <img :src="logo"  alt="MARCO Delicatess Selection logo" class="footer__logo" :loading="lazy" :decoding="async" @click="scrollToTop" />
 
                 <p>{{ t.description }}</p>
 

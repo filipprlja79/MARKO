@@ -8,10 +8,12 @@
 
       <img
         src="../assets/images/LOGO-backgroudoff.png"
+        loading="lazy"
+        :loading="lazy"
+        :decoding="async"
         alt="MARCO Delicatess Selection - tradicionalni Njeguški pršut i premium delikatesi"
         class="hero__logo"
         fetchpriority="high"
-        decoding="async"
       />
 
       <h1 id="hero-title" class="hero__title">{{ t.title }}</h1>
