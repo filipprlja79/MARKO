@@ -86,7 +86,7 @@ const sendMessage = async () => {
 
   const apiUrl = window.location.hostname === "localhost"
     ? "http://localhost/MARCO_SEO_optimized/MARCO/backend/contact.php"
-    : "/contact.php";
+    : "https://meatgroup.me/backend/contact.php";
 
   try {
     const response = await fetch(apiUrl, {
